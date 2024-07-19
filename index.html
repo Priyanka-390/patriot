@@ -22,8 +22,18 @@
       .font_avenir{
         font-family: 'Avenir-regular';
       }
+      .btn:hover{
+        background: #0d345f !important;
+        border: 2px solid white !important;
+      }
+      .btn:hover span{
+        color: white !important;
+      }
+      .btn:hover .icon1{
+         border: 1px solid white !important;
+      }
       .icons:hover{
-        box-shadow: 0px 4px 20.6px 0px #0D345F;
+        box-shadow: 0px 4px 14.6px 0px #0D345F;
       }
       @media only screen and (max-width: 576px) {
         .gap_8 {
@@ -66,8 +76,8 @@
         .bg_100 {
           background-size: 122% 100% !important;
         }
-        .min_h_300{
-          min-height: 300px !important;
+        .max_h_300{
+          max-height: 300px !important;
         }
         .px_0 {
           padding-left: 0 !important;
@@ -94,8 +104,8 @@
         .flex_col_reverse {
           flex-direction: column-reverse !important;
         }
-        .fs_25 {
-          font-size: 25px !important;
+        .fs_26 {
+          font-size: 26px !important;
           line-height: 120% !important;
         }
         .flex_col {
@@ -151,19 +161,20 @@
         <div
           style="
             width: 100%;
-            max-width: 650px;
+            max-width: 640px;
             background: white;
             margin: 0 auto;
           "
         >
           <!-- ====== HERO SECTION ======= -->
           <div
-            class="p_20_20_63 bg_100 min_h_300"
+            class="p_20_20_63 bg_100 max_h_300"
             style="
               background-image: url(./assets/images/webp/hero-bg.webp);
               background-position: center;
               background-size: cover;
               padding: 0 60px;
+              height: 392px;
               position: relative;
               z-index: 1;
             "
@@ -249,7 +260,7 @@
               </div>
             </div>
             <h1
-              class=" py_30 fs_25"
+              class=" py_30 fs_26"
               style="
                 font-weight: 600;
                 font-size: 32px;
@@ -267,7 +278,7 @@
           </div>
 
           <!-- Gold Remains -->
-          <div style="padding: 0 60px 26px; margin-top: -30px;" class="p_0_20_32">
+          <div style="padding: 0 60px 26px; margin-top: -25px;" class="p_0_20_32">
             <div class="max_w_360"
               style="
                 flex-direction: row;
@@ -333,7 +344,27 @@
                   maintain a core position in gold, according to one
                   international bank.
                 </p>
-              <div class="d_flex justify-center"><a href="#" target="_blank"><img src="./assets/images/svg/read.svg" width="89" alt="read"></a></div>
+                <a
+                  href="#" target="_blank"
+                  class="text_center"
+                  style="text-decoration: none; margin: 0 auto;"
+                  ><p
+                    class="text_center font_avenir mx_auto"
+                    style="
+                      border-bottom: 1px solid #0d345f;
+                      max-width: 89px;
+                      color: #0d345f;
+                      font-size: 14px;
+                      font-weight: 800;
+                      line-height: 16.87px;
+                      text-align: left;
+                    "
+                  >
+                    Read More
+                    <span style="padding-left: 4px;"
+                      ><img src="./assets/images/svg/arrow.svg" alt="arrow"
+                    /></span></p
+                ></a>
               </div>
             </div>
             <div 
@@ -392,7 +423,27 @@
                   cuts interest rates later this year and rising debt further
                   fuels economic uncertainty.
                 </p>
-                             <div class="d_flex justify-center"><a href=""><img src="./assets/images/svg/read.svg" width="89" alt="read"></a></div>
+                               <a
+                  href="#" target="_blank"
+                  class="text_center"
+                  style="text-decoration: none; margin: 0 auto;"
+                  ><p
+                    class="text_center font_avenir mx_auto"
+                    style="
+                      border-bottom: 1px solid #0d345f;
+                      max-width: 89px;
+                      color: #0d345f;
+                      font-size: 14px;
+                      font-weight: 800;
+                      line-height: 16.87px;
+                      text-align: left;
+                    "
+                  >
+                    Read More
+                    <span style="padding-left: 4px;"
+                      ><img src="./assets/images/svg/arrow.svg" alt="arrow"
+                    /></span></p
+                ></a>
               </div>
               <div
                 style="width: 50%; line-height: 0; padding-left: 12px;"
@@ -473,7 +524,27 @@
                   up, with gold up over 14% on the year, and silver prices up
                   over 26%.
                 </p>
-                             <div class="d_flex justify-center"><a href=""><img src="./assets/images/svg/read.svg" width="89" alt="read"></a></div>
+                            <a
+                  href="#" target="_blank"
+                  class="text_center"
+                  style="text-decoration: none; margin: 0 auto;"
+                  ><p
+                    class="text_center font_avenir mx_auto"
+                    style="
+                      border-bottom: 1px solid #0d345f;
+                      max-width: 89px;
+                      color: #0d345f;
+                      font-size: 14px;
+                      font-weight: 800;
+                      line-height: 16.87px;
+                      text-align: left;
+                    "
+                  >
+                    Read More
+                    <span style="padding-left: 4px;"
+                      ><img src="./assets/images/svg/arrow.svg" alt="arrow"
+                    /></span></p
+                ></a>
               </div>
             </div>
           </div>
@@ -498,6 +569,7 @@
                 position: absolute;
                 top: -10%;
                 left: -10%;
+                pointer-events: none;
                 z-index: -1;
               "
             ></div>
@@ -511,6 +583,7 @@
                 bottom: 0;
                 right: -2%;
                 z-index: -1;
+                pointer-events: none;
               "
             ></div>
             <h2
@@ -551,22 +624,23 @@
                 flex-wrap: wrap;
               "
             >
-              <a class="w_100"
+              <a class="w_100" 
                 href="tel:1-888-617-6122"
-                style="text-decoration: none; cursor: pointer;"
+                style="text-decoration: none; cursor: pointer; "
               >
-                <button class="max-w-225 w_100 mx_auto"
+                <button class="max-w-225 btn w_100 mx_auto"
                   style="
                     padding: 11px 12.69px;
-                    display: flex;
+                    display: flex; justify-content: center;
                     align-items: center;
                     cursor: pointer;
                     background: white;
                     border-radius: 6.95px;
-                    border: none;
+                    border: 2px solid transparent;
+                    transition: all 300ms linear;
                   "
                 >
-                  <span
+                  <span class="icon1"
                     style="
                       height: 24px;
                       width: 24px;
@@ -574,6 +648,7 @@
                       border-radius: 50%;
                       display: flex;
                       justify-content: center;
+                      border: 1px solid transparent;
                       background: #0d345f;
                     "
                   >
@@ -594,18 +669,19 @@
                   >
                 </button>
               </a>
-              <button
+              <button class="btn"
                 style="
                   padding: 11px 12.69px;
                   display: flex;
                   cursor: pointer;
+                  transition: all 300ms linear;
                   background: white;
                   align-items: center;
                   border-radius: 6.95px;
-                  border: none;
+                  border: 2px solid transparent;
                 "
               >
-                <span
+                <span class="icon1"
                   style="
                     height: 24px;
                     width: 24px;
@@ -614,6 +690,7 @@
                     display: flex;
                     justify-content: center;
                     background: #0d345f;
+                    border: 1px solid transparent;
                   "
                 >
                   <img src="./assets/images/svg/mail.svg" alt="mail-icon" />
@@ -633,7 +710,7 @@
           </div>
           
           <!-- ====== JACK HANNY ====== -->
-          <div style="padding: 0 60px 60px; margin-top: -30px;" class="p_32_20 -mt-66">
+          <div style="padding: 0 60px 60px; margin-top: -30px; position: relative; z-index: 1;" class="p_32_20 -mt-66">
             <h2 class="max_w_377 mx_auto"
               style="
                 color: black;
@@ -664,7 +741,7 @@
                   src="./assets/images/webp/ceo.webp"
                   alt="ceo"
                   width="245"
-                  style="max-width: 245px;border-radius: 12px;"
+                  style="max-width: 245px;border-radius: 12px; width: 100%;"
                 />
               </div>
               <div style="width: 50%; padding-left: 12px;" class="w_100 pl_0">
@@ -758,7 +835,7 @@
                   src="/assets/images/webp/nofee.webp"
                   alt="nofee"
                   width="240"
-                  style="max-width: 240px;border-radius: 12px;"
+                  style="max-width: 240px; border-radius: 12px; width: 100%;"
                 />
               </div>
             </div>
@@ -838,7 +915,7 @@
                 >Precious Metals Self Directed IRA</span
               >
             </h2>
-            <div
+             <div
               style="
                 display: flex;
                 gap: 13.8px;
@@ -846,22 +923,23 @@
                 flex-wrap: wrap;
               "
             >
-              <a class="w_100"
+              <a class="w_100" 
                 href="tel:1-888-617-6122"
-                style="text-decoration: none; cursor: pointer;"
+                style="text-decoration: none; cursor: pointer; "
               >
-                <button class="max-w-225 w_100 mx_auto"
+                <button class="max-w-225 btn w_100 mx_auto"
                   style="
                     padding: 11px 12.69px;
-                    display: flex;
+                    display: flex; justify-content: center;
                     align-items: center;
                     cursor: pointer;
                     background: white;
                     border-radius: 6.95px;
-                    border: none;
+                    border: 2px solid transparent;
+                    transition: all 300ms linear;
                   "
                 >
-                  <span
+                  <span class="icon1"
                     style="
                       height: 24px;
                       width: 24px;
@@ -869,6 +947,7 @@
                       border-radius: 50%;
                       display: flex;
                       justify-content: center;
+                      border: 1px solid transparent;
                       background: #0d345f;
                     "
                   >
@@ -889,18 +968,19 @@
                   >
                 </button>
               </a>
-              <button
+              <button class="btn"
                 style="
                   padding: 11px 12.69px;
                   display: flex;
                   cursor: pointer;
+                  transition: all 300ms linear;
                   background: white;
                   align-items: center;
                   border-radius: 6.95px;
-                  border: none;
+                  border: 2px solid transparent;
                 "
               >
-                <span
+                <span class="icon1"
                   style="
                     height: 24px;
                     width: 24px;
@@ -909,6 +989,7 @@
                     display: flex;
                     justify-content: center;
                     background: #0d345f;
+                    border: 1px solid transparent;
                   "
                 >
                   <img src="./assets/images/svg/mail.svg" alt="mail-icon" />
