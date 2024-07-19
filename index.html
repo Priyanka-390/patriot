@@ -15,6 +15,16 @@
         padding: 0;
         box-sizing: border-box;
       }
+      @font-face {
+        font-family: 'Avenir-regular';
+        src: url(./assets/fonts/Avenir\ Regular.ttf);
+      }
+      .font_avenir{
+        font-family: 'Avenir-regular';
+      }
+      .icons:hover{
+        box-shadow: 0px 4px 20.6px 0px #0D345F;
+      }
       @media only screen and (max-width: 576px) {
         .gap_8 {
           gap: 8px !important;
@@ -103,18 +113,25 @@
         .p_0_20_32 {
           padding: 0 20px 32px !important;
         }
-        .-mt-30 {
-          margin-top: -30px !important;
-        }
         .w_18 {
           width: 18px !important;
         }
         .h_18 {
           height: 18px !important;
         }
-        .-mt-80{
-          margin-top: -80px !important;
+        .-mt-66{
+          margin-top: -66px !important;
         }
+        .max_w_377{
+          max-width: 377px !important;
+        }
+        .max-w-225{
+          max-width: 225px !important;
+        }
+        .margin_auto{
+          margin: 0 auto !important;
+        }
+        
       }
     </style>
   </head>
@@ -144,8 +161,35 @@
               background-position: center;
               background-size: cover;
               padding: 0 60px;
+              position: relative;
+              z-index: 1;
             "
           >
+           <div
+              style="
+                background: #e7b8541f;
+                filter: blur(9.6px);
+                height: 156px;
+                width: 156px;
+                position: absolute;
+                top: -4%;
+                pointer-events: none;
+                left: -4%;
+                z-index: -1;
+              "
+            ></div>
+            <div
+              style="
+                background: #e7b8541f;
+                filter: blur(22.6px);
+                height: 156px;
+                width: 156px;
+                position: absolute;
+                bottom: 8%;
+                right: -4%;
+                z-index: -1;
+              "
+            ></div>
             <div
               style="
                 display: flex;
@@ -170,8 +214,8 @@
                     <div
                       class="w_18 h_18"
                       style="
-                        width: 21px;
-                        height: 21px;
+                        width: 24px;
+                        height: 24px;
                         display: flex;
                         padding-top: 2px;
                         padding-left: 2px;
@@ -202,14 +246,16 @@
               </div>
             </div>
             <h1
-              class="px_0 py_30 fs_25"
+              class=" py_30 fs_25"
               style="
                 font-weight: 600;
                 font-size: 32px;
                 line-height: 38.4px;
                 text-align: center;
                 color: white;
-                padding: 49px 52px 157px 52px;
+                padding: 49px 0 147px 0;
+                max-width: 403px;
+                margin: 0 auto;
               "
             >
               Gold A <span style="color: #e7b854;">“Core Asset”</span> Ahead Of
@@ -218,7 +264,7 @@
           </div>
 
           <!-- Gold Remains -->
-          <div style="padding: 0 60px 26px;" class="p_0_20_32 -mt-30">
+          <div style="padding: 0 60px 26px; margin-top: -30px;" class="p_0_20_32">
             <div
               style="
                 flex-direction: row;
@@ -230,26 +276,26 @@
               "
             >
               <div
-                style="width: 50%; padding-right: 12px;"
+                style="width: 50%; line-height: 0; padding-right: 12px;"
                 class="w_100 d_flex justify-center pr_0 pb_16"
               >
                 <img
                   src="/assets/images/webp/statue.webp"
                   alt="statue"
                   width="248"
-                  style="width: 100%;"
+                  height="255"
+                  style="max-width: 248px; width: 100%; border-radius: 12px;"
                 />
               </div>
               <div style="width: 50%; padding: 0 12px;" class="w_100 pl_0 pr_0">
                 <h3
-                  class="mw_100 text_center"
+                  class="text_center "
                   style="
                     color: black;
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 19.2px;
                     text-align: left;
-                    max-width: 210px;
                     padding-bottom: 8px;
                   ">
                   Gold Remains A Core Asset To Hold Ahead Of U.S. Elections –
@@ -264,11 +310,11 @@
                     text-align: left;
                     padding-bottom: 8px;
                   "
-                  class="text_center"
+                  class="text_center font_avenir"
                 >
                   06/24/2024
                 </p>
-                <p
+                <p 
                   style="
                     color: #4d4d4d;
                     font-size: 12px;
@@ -277,34 +323,14 @@
                     text-align: left;
                     padding-bottom: 20px;
                   "
-                  class="text_center pb_16"
+                  class="text_center margin_auto pb_16"
                 >
                   The geopolitical uncertainty pushing nations to diversify away
                   from the U.S. dollar is a good reason for investors to
                   maintain a core position in gold, according to one
                   international bank.
                 </p>
-                <a
-                  href=""
-                  class="text_center"
-                  style="text-decoration: none; margin: 0 auto;"
-                  ><p
-                    class="text_center mx_auto"
-                    style="
-                      border-bottom: 1px solid #0d345f;
-                      max-width: 89px;
-                      color: #0d345f;
-                      font-size: 14px;
-                      font-weight: 800;
-                      line-height: 16.87px;
-                      text-align: left;
-                    "
-                  >
-                    Read More
-                    <span style="padding-left: 4px;"
-                      ><img src="./assets/images/svg/arrow.svg" alt="arrow"
-                    /></span></p
-                ></a>
+              <div class="d_flex justify-center"><a href="#" target="_blank"><img src="./assets/images/svg/read.svg" width="89" alt="read"></a></div>
               </div>
             </div>
             <div
@@ -335,7 +361,7 @@
                   Prices To $3,000 In The Next 12-18 months – Bank of America
                 </h3>
                 <p
-                  class="text_center"
+                  class="text_center font_avenir"
                   style="
                     color: #4d4d4d;
                     font-size: 12px;
@@ -363,34 +389,17 @@
                   cuts interest rates later this year and rising debt further
                   fuels economic uncertainty.
                 </p>
-                <a href="" style="text-decoration: none;"
-                  ><p
-                    class="mx_auto text_center"
-                    style="
-                      border-bottom: 1px solid #0d345f;
-                      max-width: 89px;
-                      color: #0d345f;
-                      font-size: 14px;
-                      font-weight: 800;
-                      line-height: 16.87px;
-                      text-align: left;
-                    "
-                  >
-                    Read More
-                    <span style="padding-left: 4px;"
-                      ><img src="./assets/images/svg/arrow.svg" alt="arrow"
-                    /></span></p
-                ></a>
+                             <div class="d_flex justify-center"><a href=""><img src="./assets/images/svg/read.svg" width="89" alt="read"></a></div>
               </div>
               <div
-                style="width: 50%; padding-left: 12px;"
-                class="w_100 pl_0 pb_16"
+                style="width: 50%; line-height: 0; padding-left: 12px;"
+                class="w_100 d_flex justify-center pl_0 pb_16"
               >
                 <img
                   src="/assets/images/webp/building.webp"
                   alt="building"
                   width="248"
-                  style="width: 100%;"
+                   style="max-width: 248px; width: 100%; border-radius: 12px;"
                 />
               </div>
             </div>
@@ -404,14 +413,14 @@
               "
             >
               <div
-                style="width: 50%; padding-right: 12px;"
-                class="w_100 pr_0 pb_16"
+                style="width: 50%; line-height: 0; padding-right: 12px;"
+                class="w_100 pr_0 d_flex justify-center pb_16"
               >
                 <img
                   src="/assets/images/webp/coins.webp"
                   alt="statue"
                   width="248"
-                  style="width: 100%;"
+                  style="max-width: 248px; width: 100%; border-radius: 12px;"
                 />
               </div>
               <div
@@ -433,7 +442,7 @@
                   $4,800 Gold By 2030 “Sounds Pretty Realistic”
                 </h3>
                 <p
-                  class="text_center"
+                  class="text_center font_avenir"
                   style="
                     color: #4d4d4d;
                     font-size: 12px;
@@ -461,24 +470,7 @@
                   up, with gold up over 14% on the year, and silver prices up
                   over 26%.
                 </p>
-                <a href="" style="text-decoration: none;"
-                  ><p
-                    class="mx_auto text_center"
-                    style="
-                      border-bottom: 1px solid #0d345f;
-                      max-width: 89px;
-                      color: #0d345f;
-                      font-size: 14px;
-                      font-weight: 800;
-                      line-height: 16.87px;
-                      text-align: left;
-                    "
-                  >
-                    Read More
-                    <span style="padding-left: 4px;"
-                      ><img src="./assets/images/svg/arrow.svg" alt="arrow"
-                    /></span></p
-                ></a>
+                             <div class="d_flex justify-center"><a href=""><img src="./assets/images/svg/read.svg" width="89" alt="read"></a></div>
               </div>
             </div>
           </div>
@@ -502,7 +494,7 @@
                 width: 156px;
                 position: absolute;
                 top: -10%;
-                left: -6%;
+                left: -10%;
                 z-index: -1;
               "
             ></div>
@@ -513,8 +505,8 @@
                 height: 156px;
                 width: 156px;
                 position: absolute;
-                bottom: -10%;
-                right: -6%;
+                bottom: 0;
+                right: -2%;
                 z-index: -1;
               "
             ></div>
@@ -552,20 +544,21 @@
                 display: flex;
                 gap: 13.8px;
                 justify-content: center;
-                padding-bottom: 78px;
+                padding-bottom: 80px;
                 flex-wrap: wrap;
               "
             >
-              <a
+              <a class="w_100"
                 href="tel:1-888-617-6122"
                 style="text-decoration: none; cursor: pointer;"
               >
-                <button
+                <button class="max-w-225 w_100 mx_auto"
                   style="
                     padding: 11px 12.69px;
                     display: flex;
                     align-items: center;
                     cursor: pointer;
+                    background: white;
                     border-radius: 6.95px;
                     border: none;
                   "
@@ -603,6 +596,7 @@
                   padding: 11px 12.69px;
                   display: flex;
                   cursor: pointer;
+                  background: white;
                   align-items: center;
                   border-radius: 6.95px;
                   border: none;
@@ -636,8 +630,8 @@
           </div>
           
           <!-- ====== JACK HANNY ====== -->
-          <div style="padding: 0 60px 60px;" class="p_32_20 -mt-80">
-            <h2
+          <div style="padding: 0 60px 60px; margin-top: -30px;" class="p_32_20 -mt-66">
+            <h2 class="max_w_377 mx_auto"
               style="
                 color: black;
                 font-size: 24px;
@@ -661,13 +655,13 @@
             >
               <div
                 style="width: 50%; padding-right: 12px;"
-                class="w_100 pr_0 pb_16"
+                class="w_100 pr_0 d_flex justify-center pb_16"
               >
                 <img
                   src="./assets/images/webp/ceo.webp"
                   alt="ceo"
                   width="245"
-                  style="width: 100%;"
+                  style="max-width: 245px;border-radius: 12px;"
                 />
               </div>
               <div style="width: 50%; padding-left: 12px;" class="w_100 pl_0">
@@ -755,13 +749,13 @@
               </div>
               <div
                 style="padding-left: 12px; width: 50%;"
-                class="w_100 pl_0 pb_16"
+                class="w_100 d_flex justify-center pl_0 pb_16"
               >
                 <img
                   src="/assets/images/webp/nofee.webp"
                   alt="nofee"
                   width="240"
-                  style="width: 100%;"
+                  style="max-width: 240px;border-radius: 12px;"
                 />
               </div>
             </div>
@@ -807,8 +801,8 @@
                 height: 156px;
                 width: 156px;
                 position: absolute;
-                top: -10%;
-                left: -6%;
+                top: -12%;
+                left: -7%;
                 z-index: -1;
               "
             ></div>
@@ -819,8 +813,8 @@
                 height: 156px;
                 width: 156px;
                 position: absolute;
-                bottom: -10%;
-                right: -6%;
+                bottom: -8%;
+                right: -7%;
                 z-index: -1;
               "
             ></div>
@@ -849,48 +843,55 @@
                 flex-wrap: wrap;
               "
             >
-              <button
-                style="
-                  padding: 11px 12.69px;
-                  cursor: pointer;
-                  display: flex;
-                  align-items: center;
-                  border-radius: 6.95px;
-                  border: none;
-                "
+              <a class="w_100"
+                href="tel:1-888-617-6122"
+                style="text-decoration: none; cursor: pointer;"
               >
-                <span
+                <button class="max-w-225 w_100 mx_auto"
                   style="
-                    height: 24px;
-                    width: 24px;
-                    padding: 6px;
-                    border-radius: 50%;
+                    padding: 11px 12.69px;
                     display: flex;
-                    justify-content: center;
-                    background: #0d345f;
+                    align-items: center;
+                    cursor: pointer;
+                    background: white;
+                    border-radius: 6.95px;
+                    border: none;
                   "
                 >
-                  <img
-                    src="./assets/images/svg/call-icon.svg"
-                    alt="call-icon"
-                  />
-                </span>
-                <span
-                  style="
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 21px;
-                    color: #0d345f;
-                    padding-left: 5px;
-                  "
-                  >1-888-617-6122</span
-                >
-              </button>
+                  <span
+                    style="
+                      height: 24px;
+                      width: 24px;
+                      padding: 6px;
+                      border-radius: 50%;
+                      display: flex;
+                      justify-content: center;
+                      background: #0d345f;
+                    "
+                  >
+                    <img
+                      src="./assets/images/svg/call-icon.svg"
+                      alt="call-icon"
+                    />
+                  </span>
+                  <span
+                    style="
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 21px;
+                      color: #0d345f;
+                      padding-left: 5px;
+                    "
+                    >1-888-617-6122</span
+                  >
+                </button>
+              </a>
               <button
                 style="
                   padding: 11px 12.69px;
-                  cursor: pointer;
                   display: flex;
+                  cursor: pointer;
+                  background: white;
                   align-items: center;
                   border-radius: 6.95px;
                   border: none;
@@ -960,18 +961,21 @@
               "
             >
               <div style="margin-bottom: 0;">
-                <a
+                <a class="icons"
                   href="https://www.facebook.com/patriotgoldgroup"
                   target="_blank"
                   style="
                     width: 32px;
+                    transition: all 300ms linear;
                     height: 32px;
                     padding-top: 2px;
+                    box-sizing: border-box;
                     background: #0d345f;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    
                   "
                 >
                   <span>
@@ -984,13 +988,14 @@
                 </a>
               </div>
               <div style="margin-bottom: 0;">
-                <a
+                <a class="icons"
                   href="https://x.com/i/flow/login?redirect_after_login=%2Fpatriot_gold"
                   target="_blank"
                   style="
                     width: 32px;
                     height: 32px;
                     background: #0d345f;
+                    transition: all 300ms linear;
                     padding-top: 2px;
                     border-radius: 50%;
                     display: flex;
@@ -999,7 +1004,7 @@
                   "
                 >
                   <span>
-                    <img
+                    <img 
                       src="/assets/images/svg/twitter.svg"
                       height="13.33"
                       alt="twitter"
