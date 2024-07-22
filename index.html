@@ -35,6 +35,7 @@
       .icons:hover{
         box-shadow: 0px 4px 14.6px 0px #0D345F;
       }
+
       @media only screen and (max-width: 576px) {
         .gap_8 {
           gap: 8px !important;
@@ -73,14 +74,14 @@
         .w_100 {
           width: 100% !important;
         }
-        .py_30 {
-          padding: 30px 0 !important;
+        .py_14 {
+          padding: 14px 0 !important;
         }
         .bg_100 {
-          background-size: 122% 100% !important;
+          background-size: 100% 100% !important;
         }
-        .max_h_300{
-          max-height: 300px !important;
+        .max_h_270{
+          max-height: 270px !important;
         }
         .px_0 {
           padding-left: 0 !important;
@@ -147,10 +148,12 @@
         .max_w_360{
           max-width: 360px !important;
         }
-        .-mt_45{
-          margin-top: -45px !important;
-        }
         
+      }
+      @media only screen and (max-width: 768px) {
+        .h_330{
+          height: 330px !important;
+        }
       }
     </style>
   </head>
@@ -174,13 +177,13 @@
         >
           <!-- ====== HERO SECTION ======= -->
           <div
-            class="p_20_20_63  max_h_300 bg_cover"
+            class="p_20_20_63  max_h_270 h_330 bg_100"
             style="
               background-image: url(./assets/images/webp/hero-bg.webp);
               background-position: center;
-              background-size: 100% 100%;
+              background-size:cover;
               padding: 0 60px;
-              height: 322px;
+              height: 392px;
               position: relative;
               z-index: 1;
             "
@@ -268,14 +271,14 @@
               </div>
             </div>
             <h1
-              class=" py_30 fs_26"
+              class=" py_14 fs_26"
               style="
                 font-weight: 600;
                 font-size: 32px;
                 line-height: 38.4px;
                 text-align: center;
                 color: white;
-                padding: 40px 0 147px 0;
+                padding: 49px 0 147px 0;
                 max-width: 403px;
                 margin: 0 auto;
               "
@@ -286,7 +289,7 @@
           </div>
 
           <!-- Gold Remains -->
-          <div style="padding: 0 60px 26px; margin-top: -25px;" class="p_0_20_32 -mt_45">
+          <div style="padding: 0 60px 26px; margin-top: -25px;" class="p_0_20_32">
             <div class="max_w_360"
               style="
                 flex-direction: row;
@@ -1023,7 +1026,7 @@
           </div>
         
             <!-- ====== FOOTER ====== -->
-              <footer class="p_32_20" style="padding: 20px 60px;">
+              <footer class="p_32_20" style="padding: 20px 60px;background-color: #E7EBEF;">
                     <p class="pr_0 text_center" style="font-weight: 400;font-size: 10px;line-height: 15px;color: #515254; padding-right: 6px; padding-bottom: 24px;">PGG is not providing investment, legal or tax advice. The reports provided are for general information purposes only. Please consult a qualified tax professional for strategies. "All investments carry some degree of risk. Stocks, bonds, [precious metals, crypto currencies], mutual funds and exchange-traded funds can lose value if market conditions sour. Even conservative, insured investments, such as certificates of deposit (CDs) issued by a bank or credit union, come with inflation risk. That is, they may not earn enough over time to keep pace with the increasing cost of living." (FINRA 11/2022)</p>
                     <div class="gap_8" style="display: flex; gap: 20px; padding-bottom: 12px; justify-content: center; ">
                         <div style="margin-bottom: 0;">
@@ -1045,121 +1048,6 @@
                      <p  style="font-weight: 400;font-size: 12px;line-height: 18px;color: #111111; text-align: center; padding-bottom: 6px;">If you don't want to receive emails, please <a href="#" style="color: #111111;">unsubscribe here.</a></p>
                 </footer>
           </div>
-
-          <!-- ====== FOOTER ====== -->
-          <footer
-            class="p_32_20"
-            style="padding: 26px 60px 20px 60px; background-color: #e7ebef;"
-          >
-            <p
-              class="pr_0 text_center"
-              style="
-                font-weight: 400;
-                font-size: 10px;
-                line-height: 15px;
-                color: #515254;
-                padding-right: 6px;
-                padding-bottom: 24px;
-              "
-            >
-              PGG is not providing investment, legal or tax advice. The reports
-              provided are for general information purposes only. Please consult
-              a qualified tax professional for strategies. "All investments
-              carry some degree of risk. Stocks, bonds, [precious metals, crypto
-              currencies], mutual funds and exchange-traded funds can lose value
-              if market conditions sour. Even conservative, insured investments,
-              such as certificates of deposit (CDs) issued by a bank or credit
-              union, come with inflation risk. That is, they may not earn enough
-              over time to keep pace with the increasing cost of living." (FINRA
-              11/2022)
-            </p>
-            <div
-              class="gap_8"
-              style="
-                display: flex;
-                gap: 20px;
-                padding-bottom: 12px;
-                justify-content: center;
-              "
-            >
-              <div style="margin-bottom: 0;">
-                <a class="icons"
-                  href="https://www.facebook.com/patriotgoldgroup"
-                  target="_blank"
-                  style="
-                    width: 32px;
-                    transition: all 300ms linear;
-                    height: 32px;
-                    padding-top: 2px;
-                    box-sizing: border-box;
-                    background: #0d345f;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    
-                  "
-                >
-                  <span>
-                    <img
-                      src="/assets/images/svg/facebook.svg"
-                      height="13.33"
-                      alt="fb "
-                    />
-                  </span>
-                </a>
-              </div>
-              <div style="margin-bottom: 0;">
-                <a class="icons"
-                  href="https://x.com/i/flow/login?redirect_after_login=%2Fpatriot_gold"
-                  target="_blank"
-                  style="
-                    width: 32px;
-                    height: 32px;
-                    background: #0d345f;
-                    transition: all 300ms linear;
-                    padding-top: 2px;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <span>
-                    <img 
-                      src="/assets/images/svg/twitter.svg"
-                      height="13.33"
-                      alt="twitter"
-                    />
-                  </span>
-                </a>
-              </div>
-            </div>
-            <p
-              style="
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 18px;
-                color: #111111;
-                text-align: center;
-              "
-            >
-              © 2024 Patriot Gold Group. All rights reserved.
-            </p>
-            <p
-              style="
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 18px;
-                color: #111111;
-                text-align: center;
-                padding-bottom: 6px;
-              "
-            >
-              If you don't want to receive emails, please
-              <a href="#" style="color: #111111;">unsubscribe here.</a>
-            </p>
-          </footer>
         </div>
       </div>
     </div>
